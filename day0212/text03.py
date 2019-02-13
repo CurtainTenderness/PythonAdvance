@@ -66,24 +66,23 @@
 
 
 # 第三题
-from day0212.utils import Utils
-print(Utils.max(5,100))
 class Person(object):
-    def __init__(self, _name):
-        self.name = _name
-    def setname(self,  _newname):
-        self.name = _newname
-@classmethod
-def time(cls):
-    print("time")
-@staticmethod
-def log():
-    print("disanti")
-s1=Person("weg")
-Person.age=18
-s1.time=time
-print(s1.time)
+    isOpen=True
+    def getname(self,_name):
+        self.name=_name
+s1=Person()
+# 动态添加类属性
+Person.age=15
 print(s1.age)
+s1.getname("ljk")
+print(s1.name)
+# 动态添加实例属性
+s1.classname="三年级"
+print(s1.classname)
+
+
+
+
 
 
 
