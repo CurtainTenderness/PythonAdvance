@@ -76,6 +76,7 @@ Person.age=15
 print(s1.age)
 s1.getname("ljk")
 print(s1.name)
+
 # 动态添加实例属性
 s1.classname="三年级"
 print(s1.classname)
